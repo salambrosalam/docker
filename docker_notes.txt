@@ -1,0 +1,28 @@
+Hi here will be a docker notes :)
+I hope that this will help you.
+
+Docker Engine - Это и есть сам докер который мы ставим
+Docker Container - Это и есть сама маленькая виртуальная машинка (Контейнер в котором все исполняется)
+Docker Image - Это его образ по которому создается контейнер(как образ обычн ой ОС)
+Dockerfile - Файл из которого создается Docker Image
+
+Docker commands:
+
+>docker images(Показать список доступных, образов докер)
+>docker search *some docker*(Поиск докеров на DockerHub)
+>docker pull *some docker*(Скачать определённый докер с DockerHub)
+>docker ps(Показать все контейнеры которые сейчас бегут)
+>docker ps -a(Показать все контейнеры которые когда-то бежали)
+>docker run -it -p 1234:8080 tomcat(Запустить контейнер "tomcat", в интерактивном режиме,-it показать консоль самого докера, и получить доступ к порту 8080 через порт 1234,-d пустить его как демон)
+>docker rmi *IMAGE*(Удалить образ докер)
+>docker rm *CONTAINER ID*(Удалить докер контейнер)
+>docker build -t serg:v1 .(Собрать образ)
+>docker tag serg:v1 serg:v2 (Копия в serg v1 > serg v2)
+>docker stop *CONTAINER ID*(Остановить контейнер)
+>docker exec -it *CONTAINER ID* /bin/bash(Залогинится на контейнер)
+>docker commit *CONTAINER ID* denis:v2(Сделать коммит, обновить образ)
+ 
+
+
+
+
